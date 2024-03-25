@@ -1,0 +1,5 @@
+package articulationpoints
+
+func FindArticulationPoints() {
+
+}
