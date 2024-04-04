@@ -5,7 +5,7 @@ import (
 )
 
 // https://www.geeksforgeeks.org/eulerian-path-and-circuit/
-// Eulerian Path is a path in a graph that visits every edge exactly once.
+// Eulerian Path is a path in a Connected Graph that visits every edge exactly once.
 // Eulerian Circuit is an Eulerian Path that starts and ends on the same vertex.
 
 // Eulerian Cycle: An undirected graph has Eulerian cycle if following two conditions are true.

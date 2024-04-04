@@ -66,6 +66,31 @@ func TestIsEulerian(t *testing.T) {
 			expected: 1,
 		},
 		{
+			name:     "Eulerian graph",
+			vertices: 5,
+			edges: []unweightedundirectedgraph.Edge{
+				{Src: 0, Dest: 1},
+				{Src: 0, Dest: 2},
+				{Src: 0, Dest: 3},
+				{Src: 0, Dest: 4},
+				{Src: 1, Dest: 2},
+				{Src: 3, Dest: 4},
+			},
+			expected: 2,
+		},
+		{
+			name:     "Semi-Eulerian graph",
+			vertices: 5,
+			edges: []unweightedundirectedgraph.Edge{
+				{Src: 0, Dest: 1},
+				{Src: 1, Dest: 2},
+				{Src: 0, Dest: 2},
+				{Src: 0, Dest: 3},
+				{Src: 3, Dest: 4},
+			},
+			expected: 1,
+		},
+		{
 			name:     "Non-Eulerian graph",
 			vertices: 5,
 			edges: []unweightedundirectedgraph.Edge{
